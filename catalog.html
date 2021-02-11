@@ -10,28 +10,28 @@
 
   <header>
     <section>
-    <h1>ТЕХНОМАРТ</h1>
+      <h1>ТЕХНОМАРТ</h1>
 
-    <ul>
-      <li>
-        <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="">
-        <a>Поиск:</a>
-      </li>
-      <li>
-        <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="">
-        <p>Закладки:</p>
-        <p>0</p>
-      </li>
-      <li>
-        <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="">
-        <p>Корзина:</p>
-        <p>0</p>
-      </li>
-      <li>
-        <button type="button">Оформить заказ</button>
-      </li>
-    </ul>
-  </section>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="">
+          <a>Поиск:</a>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="">
+          <p>Закладки:</p>
+          <p>0</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/11x11" width="11" height="11" alt="">
+          <p>Корзина:</p>
+          <p>0</p>
+        </li>
+        <li>
+          <button type="button">Оформить заказ</button>
+        </li>
+      </ul>
+    </section>
 
 
     <section>
@@ -84,9 +84,264 @@
 
 
   <main>
+    <h2>Перфораторы</h2>
 
+    <ul>
+      <li>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="На главную">
+        </a>
+      </li>
+      <li>
+        <a href="#">Каталог</a>
+      </li>
+      <li>
+        <a href="#">Инструмент</a>
+      </li>
+      <li>
+        <a>Перфораторы</a>
+      </li>
+    </ul>
+
+    <section>
+      <h2>Фильтр</h2>
+
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Цена:</legend>
+          <div>
+            <input type="range" name="price-range" id="price-range">
+          </div>
+          <div>
+            <input type="number" name="price-min" id="price-min" min="0" max="30000" placeholder="0">
+
+            <span>–</span>
+
+            <input type="number" name="price-max" id="price-max" min="0" max="30000" placeholder="30000">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosh" id="filter-bosh" checked>
+              <label for="filter-bosh">BOSCH</label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">ИНТЕРСКОЛ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">MAKITA</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">DEWALT</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">HITACHI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="power-supply" value="wireless" id="filter-wireless" checked>
+              <label for="filter-wireless">АККУМУЛЯТОРНЫЕ</label>
+            </li>
+            <li>
+              <input type="radio" name="power-supply" value="wired" id="filter-wired">
+              <label for="filter-wired">СЕТЕВЫЕ</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">ПОКАЗАТЬ</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Сортировка</h2>
+      <fieldset id="sorting">
+        <ul>
+          <li>
+            <input type="radio" name="sorting-type" value="sorting-price" id="sorting-price" checked>
+            <label for="sorting-price">ПО ЦЕНЕ</label>
+          </li>
+          <li>
+            <input type="radio" name="sorting-type" value="sorting-type" id="sorting-type">
+            <label for="sorting-type">ПО ТИПУ</label>
+          </li>
+          <li>
+            <input type="radio" name="sorting-type" value="sorting-functionality" id="sorting-functionality">
+            <label for="sorting-functionality">ПО ФУНКЦИОНАЛУ</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="radio" name="sorting-direction" value="sorting-increase" id="sorting-increase" checked>
+            <label for="sorting-increase">По возрастанию</label>
+          </li>
+          <li>
+            <input type="radio" name="sorting-direction" value="sorting-decrease" id="sorting-decrease">
+            <label for="sorting-decrease">По убыванию</label>
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section>
+      <h2>Список товаров</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 6000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">30500 Р.</span>
+            </p>
+            <div>
+              <span>25500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 6000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">30500 Р.</span>
+            </p>
+            <div>
+              <span>25500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 6000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">30500 Р.</span>
+            </p>
+            <div>
+              <span>25500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 3000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">22500 Р.</span>
+            </p>
+            <div>
+              <span>15500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 6000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">30500 Р.</span>
+            </p>
+            <div>
+              <span>25500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 2000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <div>
+              <span>12500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 3000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">22500 Р.</span>
+            </p>
+            <div>
+              <span>15500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 6000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <p>
+              <span style="text-decoration: line-through;">30500 Р.</span>
+            </p>
+            <div>
+              <span>25500 Р.</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Перфоратор BOSH BFG 2000</h3>
+            <p>
+              <img src="https://via.placeholder.com/127x112" width="127" height="112"
+                alt="С таким перфоратором — хоть куда!">
+            </p>
+            <div>
+              <span>12500 Р.</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <button type="button">СЛЕДУЮЩАЯ</button>
+        </li>
+      </ul>
+    </section>
   </main>
-
 
   <footer>
     <h2>Техномарт</h2>
